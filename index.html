@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+  <head>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us to find out more information about you.</p>
+  </head>
+   <main id="main">
+     <form id="survey-form">
+       <label id="name-label" for="name">Name</label>
+       <input id="name" type="text" placeholder="Enter your name" required>
+       <label id="email-label" for="email">Email</label>
+       <input id="email" type="email" placeholder="Enter your email" required>
+       <label id="number-label" for="number">Age</label>
+       <input id="number" type="number" placeholder="Age" min="13" max="24" required>
+       <h2>Select which kind of book is your favourite?</h2>
+      <select id="dropdown" required>
+        <option disabled selected value>kind of books </option>
+        <option>Advanture</option>
+        <option>Romance</option>
+        <option>Detective</option>
+        <option>Historian</option>
+        <option>Biography</option>
+        <option>Other</option>
+      </select>
+        <h2>Do you like reading books?</h2>
+      <label>
+        <input
+          name="user-recommend"
+          value="yes"
+          type="radio"
+          class="input-radio"
+          checked
+        />Yes</label
+      >
+      <label>
+        <input
+          name="user-recommend"
+          value="sometimes"
+          type="radio"
+          class="input-radio"
+        />Sometimes</label
+      >
+      <label
+        ><input
+          name="user-recommend"
+          value="no"
+          type="radio"
+          class="input-radio"
+        />No</label
+      >
+    </div>
+         <h2>What is important in books?
+        <span class="clue">(Check all that apply)</span>
+      </h2>
+         <div class="form">
+         <label>
+           <input
+          name="prefer"
+          value="story"
+          type="checkbox"
+          class="input-checkbox"
+        />Story</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="character"
+          type="checkbox"
+          class="input-checkbox"
+        />Characters</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="genre"
+          type="checkbox"
+          class="input-checkbox"
+        />Genre</label
+      >
+      <label
+        ><input
+          name="prefer"
+          value="idea"
+          type="checkbox"
+          class="input-checkbox"
+        />Idea</label
+      ></div>
+
+    <div class="form-group">
+      <h2>Any comments or suggestions?</h2>
+      <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+      <button type="submit" id="submit" class="submit-button">
+        Submit
+      </button>
+     </form>       
+   </main>  
+</body>
+</html>
